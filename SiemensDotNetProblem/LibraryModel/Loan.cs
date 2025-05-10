@@ -1,8 +1,8 @@
-﻿namespace SiemensDotNetProblem;
+﻿namespace SiemensDotNetProblem.LibraryModel;
 
-public class Loan
+public class Loan : IHasID
 {
-    public int Id { get; set; }
+    public int ID { get; set; }
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
     public DateTime ReturnDate { get; set; }
@@ -12,7 +12,7 @@ public class Loan
 
     public Loan(int id, DateTime startDate, DateTime endDate, DateTime returnDate, string status, Book book, Member member)
     {
-        Id = id;
+        ID = id;
         StartDate = startDate;
         EndDate = endDate;
         ReturnDate = returnDate;

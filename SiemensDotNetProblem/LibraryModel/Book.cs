@@ -1,8 +1,8 @@
-﻿namespace SiemensDotNetProblem;
+﻿namespace SiemensDotNetProblem.LibraryModel;
 
-public class Book
+public class Book : IHasID
 {
-    public int Id { get; set; }
+    public int ID { get; set; }
     public string Title { get; set; }
     public string Author { get; set; }
     public bool IsAvailable { get; set; }
@@ -10,7 +10,7 @@ public class Book
 
     public Book(int id, string title, string author, bool isAvailable, int quantity)
     {
-        Id = id;
+        ID = id;
         Title = title;
         Author = author;
         IsAvailable = isAvailable;
