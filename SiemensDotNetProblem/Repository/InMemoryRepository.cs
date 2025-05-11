@@ -1,4 +1,6 @@
-﻿namespace SiemensDotNetProblem.LibraryRepository;
+﻿using SiemensDotNetProblem.Model;
+
+namespace SiemensDotNetProblem.Repository;
 
 public class InMemoryRepository<T> : IRepository<T> where T : IHasID
 {
